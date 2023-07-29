@@ -9,17 +9,17 @@
     <TextView
         android:id="@+id/appHeaderTextView"
         android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:background="#ffa500"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="My Temperature Converter"
+        android:textColor="#000"
+        android:textSize="24sp"
         android:gravity="center"
-        android:padding="10dp"
-        android:text="Royal Temperature Converter"
-        android:textColor="#fff"
-        android:textSize="28sp" />
+        android:background="#fff" />
 
     <EditText
         android:id="@+id/editTextValue"
-        android:layout_width="wrap_content"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
         android:hint="Enter temperature" />
 
@@ -34,14 +34,12 @@
             android:id="@+id/radioCelsius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
             android:text="Celsius" />
 
         <RadioButton
             android:id="@+id/radioFahrenheit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="Fahrenheit" />
 
     </RadioGroup>
@@ -50,17 +48,16 @@
         android:id="@+id/convertButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convert"
-        android:textColor="@color/black"
-        android:backgroundTint="#ffa500"/>
+        android:backgroundTint="@color/black"
+        android:text="Convert" />
 
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
+        android:backgroundTint="@color/black"
         android:text="Result: "
-        android:textStyle="bold"
         android:textSize="18sp" />
 
 </LinearLayout>
